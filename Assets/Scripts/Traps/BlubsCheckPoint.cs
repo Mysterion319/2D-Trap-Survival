@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRespawn : MonoBehaviour
+public class BlubsCheckPoint : MonoBehaviour
 {
     [SerializeField] private Transform Blub;
-    [SerializeField] private Transform RespawnPoint;
+    [SerializeField] private Transform CheckPoint;
 
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        Blub.transform.position = RespawnPoint.transform.position;
+        Blub.transform.position = CheckPoint.transform.position;
     }
 
 }

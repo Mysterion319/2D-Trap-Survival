@@ -15,6 +15,7 @@ TagManager:
   - Blub
   - blub
   - SLS
+  - Enemy
   layers:
   - Default
   - TransparentFX
