@@ -5,23 +5,30 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour
 {
-    public Button retryButton;
-    public Button exitButton;
+    public Button SaveHerYes;
+    public Button SaveHerNo;
+    public Button GiveUpOnHerYes;
+    public Button GiveUpOnHerNo;
+
 
     // Use this for initialization
     void Start()
     {
-        retryButton = retryButton.GetComponent<Button>();
-        exitButton = exitButton.GetComponent<Button>();
+        SaveHerYes = SaveHerYes.GetComponent<Button>();
+        SaveHerNo = SaveHerNo.GetComponent<Button>();
+        GiveUpOnHerYes = GiveUpOnHerYes.GetComponent<Button>();
+        GiveUpOnHerNo = GiveUpOnHerNo.GetComponent<Button>();
     }
 
-    public void ExitGame()
+
+
+    public void TryQuestAgain()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+    public void leaveQuest()
     {
         Application.Quit();
     }
 
-    public void RetryLevel()
-    {
-        SceneManager.LoadScene("Main");
-    }
 }

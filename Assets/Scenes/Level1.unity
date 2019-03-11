@@ -652,7 +652,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.41, y: 18.66}
+  m_AnchoredPosition: {x: -94, y: 68}
   m_SizeDelta: {x: 391.82, y: 190.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89643297
@@ -676,10 +676,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 8
+    m_MinSize: 4
     m_MaxSize: 80
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -687,7 +687,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!222 &89643299
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1458,8 +1458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saw: {fileID: 0}
-  RespawnPoint: {fileID: 1123136500}
 --- !u!61 &206733080
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3770,7 +3768,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.9097278
+  orthographic size: 4.9382205
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4587,8 +4585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saw: {fileID: 1534235246}
-  RespawnPoint: {fileID: 1848070769}
 --- !u!1 &651719247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6967,8 +6963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saw: {fileID: 0}
-  RespawnPoint: {fileID: 708501618}
 --- !u!61 &1051967988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12599,8 +12593,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saw: {fileID: 0}
-  RespawnPoint: {fileID: 1070273742}
 --- !u!61 &1669472721
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13045,7 +13037,6 @@ GameObject:
   - component: {fileID: 1771506387}
   - component: {fileID: 1771506386}
   - component: {fileID: 1771506388}
-  - component: {fileID: 1771506389}
   m_Layer: 8
   m_Name: block2 (9)
   m_TagString: Untagged
@@ -13137,26 +13128,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.14}
   m_EdgeRadius: 0
---- !u!50 &1771506389
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1771506385}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1796282594
 GameObject:
   m_ObjectHideFlags: 0
@@ -13233,7 +13204,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1796282594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.767, y: 0.001, z: 0}
+  m_LocalPosition: {x: -8.352, y: 0.355, z: 0}
   m_LocalScale: {x: 0.03910555, y: 0.02830115, z: 1}
   m_Children:
   - {fileID: 1135621177}
@@ -13335,8 +13306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saw: {fileID: 2077322461}
-  RespawnPoint: {fileID: 1281048044}
 --- !u!114 &1796282603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14598,7 +14567,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2011207131}
   - component: {fileID: 2011207130}
-  - component: {fileID: 2011207133}
   - component: {fileID: 2011207132}
   m_Layer: 0
   m_Name: block2 (4)
@@ -14691,19 +14659,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.14}
   m_EdgeRadius: 0
---- !u!114 &2011207133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2011207129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saw: {fileID: 0}
-  RespawnPoint: {fileID: 0}
 --- !u!1 &2016871872
 GameObject:
   m_ObjectHideFlags: 0
@@ -14914,7 +14869,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2026138334}
-  - component: {fileID: 2026138335}
   - component: {fileID: 2026138333}
   m_Layer: 0
   m_Name: left_saw_launcherpng
@@ -14982,17 +14936,6 @@ Transform:
   m_Father: {fileID: 483681292}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2026138335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2026138332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a198f656eb74884d9da78ecb9293dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2029769693
 GameObject:
   m_ObjectHideFlags: 0

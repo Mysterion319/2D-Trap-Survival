@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossBattle.unity
     guid: 954b5e34ddb271d4a9f4ef77a5deb725
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 3291d533b550f65449bf6355c041c1f2
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 9c83406a2e34ea84390be15576246d72
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 288cdae047001314d94f2b1d7dc77a79
+  - enabled: 1
+    path: Assets/Scenes/Objective.unity
+    guid: 260a6e84837f5974fb562b03caa8b34c
   m_configObjects: {}

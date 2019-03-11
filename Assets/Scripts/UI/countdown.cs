@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class countdown : MonoBehaviour
 {
     float LevelTime = 0f;
-    float BlubsStartingTime = 10;
+    float BlubsStartingTime = 5;
 
     [SerializeField] Text BlubsCountDownText;
     // Use this for initialization
@@ -19,7 +19,7 @@ public class countdown : MonoBehaviour
     void Update()
     {
         LevelTime -= 1 * Time.deltaTime;
-        BlubsCountDownText.text = LevelTime.ToString("0");
+        BlubsCountDownText.text = LevelTime.ToString("Time Left = 0");
 
 
 
@@ -27,6 +27,7 @@ public class countdown : MonoBehaviour
         if (LevelTime <= 0)
         {
             LevelTime = 0;
+            SceneManager.LoadScene("GameOver");
         }
           
     }
