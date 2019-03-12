@@ -5,19 +5,19 @@ using System.Collections;
 
 public class GameOver : MonoBehaviour
 {
-    public Button SaveHerYes;
-    public Button SaveHerNo;
-    public Button GiveUpOnHerYes;
-    public Button GiveUpOnHerNo;
+    public Button SaveHerYesButton;
+    public Button SaveHerNoButton;
+    public Button GiveUpOnHerYesButton;
+    public Button GiveUpOnHerNoButton;
 
 
     // Use this for initialization
     void Start()
     {
-        SaveHerYes = SaveHerYes.GetComponent<Button>();
-        SaveHerNo = SaveHerNo.GetComponent<Button>();
-        GiveUpOnHerYes = GiveUpOnHerYes.GetComponent<Button>();
-        GiveUpOnHerNo = GiveUpOnHerNo.GetComponent<Button>();
+        SaveHerYesButton = SaveHerYesButton.GetComponent<Button>();
+        SaveHerNoButton = SaveHerNoButton.GetComponent<Button>();
+        GiveUpOnHerYesButton = GiveUpOnHerYesButton.GetComponent<Button>();
+        GiveUpOnHerNoButton = GiveUpOnHerNoButton.GetComponent<Button>();
     }
 
 
@@ -26,7 +26,7 @@ public class GameOver : MonoBehaviour
     {
         SceneManager.LoadScene("StartMenu");
     }
-    public void leaveQuest()
+    public void LeaveQuest()
     {
         Application.Quit();
     }
