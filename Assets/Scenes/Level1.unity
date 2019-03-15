@@ -7849,8 +7849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!212 &1157572341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7985,8 +7983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!212 &1180717593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8918,8 +8914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!212 &1310467698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9577,8 +9571,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1353911612}
-  - component: {fileID: 1353911611}
   - component: {fileID: 1353911610}
+  - component: {fileID: 1353911611}
   - component: {fileID: 1353911609}
   - component: {fileID: 1353911608}
   - component: {fileID: 1353911607}
@@ -9660,10 +9654,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1353911606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6395924366f2502438181a72c39b8bc0, type: 3}
+  m_Script: {fileID: 11500000, guid: 25053ba9b0fdc8041b6855d84473d7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Level2: 
+  CastleLetter: 
 --- !u!212 &1353911611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10295,8 +10289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!61 &1437640489
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12853,8 +12845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!61 &1744148692
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13138,7 +13128,6 @@ GameObject:
   - component: {fileID: 1796282596}
   - component: {fileID: 1796282595}
   - component: {fileID: 1796282603}
-  - component: {fileID: 1796282602}
   - component: {fileID: 1796282601}
   - component: {fileID: 1796282599}
   - component: {fileID: 1796282597}
@@ -13295,17 +13284,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blub: {fileID: 1796282594}
---- !u!114 &1796282602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1796282594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cede77495cbae324585baadbef9ecd97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1796282603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15215,8 +15193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!50 &2059130204
 Rigidbody2D:
   serializedVersion: 4
@@ -15291,6 +15267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067683431}
+  - component: {fileID: 2067683432}
   - component: {fileID: 2067683430}
   - component: {fileID: 2067683429}
   m_Layer: 0
@@ -15368,12 +15345,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067683428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5049999, y: 1.303, z: 0}
+  m_LocalPosition: {x: -5.278, y: 0.068, z: 0}
   m_LocalScale: {x: 0.017827095, y: 0.016113708, z: 1}
   m_Children: []
   m_Father: {fileID: 1376281258}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2067683432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067683428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e3ec8ea5295e94dacaa85df1f286a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GraveyardLetter: 
 --- !u!1 &2076797932
 GameObject:
   m_ObjectHideFlags: 0
@@ -15585,8 +15574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cac905cf5d24947a1ca309ba826814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blub: {fileID: 1796282596}
-  BlubsCheckPointRespawn: {fileID: 1188899269}
 --- !u!61 &2077322464
 BoxCollider2D:
   m_ObjectHideFlags: 0

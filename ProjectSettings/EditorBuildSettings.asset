@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: 28aa15625eeecd24ab124a3469f2503b
+  - enabled: 1
+    path: Assets/Scenes/GraveyardLetter.unity
+    guid: e06bffc6e4bd2ea4da09350cd4e32982
   m_configObjects: {}
