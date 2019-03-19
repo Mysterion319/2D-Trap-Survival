@@ -6,11 +6,12 @@ public class LavaDeath : MonoBehaviour
 {
     [SerializeField] private Transform Blub;
     [SerializeField] private Transform RespawnPoint;
-
+    public AudioSource death;
 
     void OnTriggerEnter2D(Collider2D col)
     {
         Blub.transform.position = RespawnPoint.transform.position;
+        death.Play();
     }
 
 }

@@ -11,7 +11,7 @@ public class Playermovement : MonoBehaviour
     private float CharacterMoveInput;
     public float BlubJumpForce;
 
-
+    public AudioSource jump;
 
 
     private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
@@ -60,7 +60,7 @@ public class Playermovement : MonoBehaviour
             BlubIsJumping = true;
             BlubJumpTimeCounter = BlubJumpTime;
             rb2d.velocity = Vector2.up * BlubJumpForce;
-
+            jump.Play();
 
         }
 
@@ -75,9 +75,7 @@ public class Playermovement : MonoBehaviour
                 BlubIsJumping = false;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Space)){
-
-        }
+        
     }
    
 }
