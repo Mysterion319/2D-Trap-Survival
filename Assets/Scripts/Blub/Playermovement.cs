@@ -31,18 +31,19 @@ public class Playermovement : MonoBehaviour
         //Get and store a reference to the Rigidbody2D component so that we can access it.
         rb2d = GetComponent<Rigidbody2D>();
 
-        
+
     }
 
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
     void FixedUpdate()
     {
         CharacterMoveInput = Input.GetAxisRaw("Horizontal");
-        rb2d.velocity = new Vector2(CharacterMoveInput * speed, rb2d.velocity.y); 
+        rb2d.velocity = new Vector2(CharacterMoveInput * speed, rb2d.velocity.y);
     }
 
 
-    void Update() {
+    void Update()
+    {
 
         isGrounded = Physics2D.OverlapCircle(BlubFeetPos.position, CheckFloorRadius, WhatIsGround);
 
@@ -50,7 +51,9 @@ public class Playermovement : MonoBehaviour
         if (CharacterMoveInput > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
-        } else if (CharacterMoveInput < 0) {
+        }
+        else if (CharacterMoveInput < 0)
+        {
             transform.eulerAngles = new Vector3(0, 180, 0);
 
         }
@@ -64,18 +67,7 @@ public class Playermovement : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.Space) && BlubIsJumping == true)
-        {
-            if (BlubJumpTimeCounter > 0)
-            {
-                rb2d.velocity = Vector2.up * BlubJumpForce;
-                BlubJumpTimeCounter -= Time.deltaTime;
-            } else
-            {
-                BlubIsJumping = false;
-            }
         }
-        
+
     }
-   
-}
+

@@ -8,10 +8,10 @@ public class LetterPickUp : MonoBehaviour
 {
 
     public AudioSource ChurchChime;
-    public Text LetterCollected;         
+    public Text LetterCollected;
 
-    private Rigidbody2D rb2d;      
-    private int count;              
+    private Rigidbody2D rb2d;
+    private int count;
 
     // Use this for initialization
     void Start()
@@ -20,14 +20,14 @@ public class LetterPickUp : MonoBehaviour
 
         count = 0;
 
-       
 
 
-       
+
+
         SetLetterCollected();
     }
 
-   
+
     void FixedUpdate()
     {
 
@@ -35,27 +35,27 @@ public class LetterPickUp : MonoBehaviour
 
     }
 
-   
+
     void OnTriggerEnter2D(Collider2D other)
     {
-       
+
         if (other.gameObject.CompareTag("Love_Letter"))
             ChurchChime.Play();
 
         other.gameObject.SetActive(false);
 
-      
+
         count = count + 1;
 
-      
+
         SetLetterCollected();
-     
+
     }
 
-    
+
     void SetLetterCollected()
     {
-        
+
         LetterCollected.text = "Letter Collected " + count.ToString();
 
 
