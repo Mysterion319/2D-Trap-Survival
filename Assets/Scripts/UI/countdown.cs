@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class countdown : MonoBehaviour
 {
     float LevelTime = 0f;
-    float BlubsStartingTime = 5;
+    float BlubsStartingTime = 60;
 
     [SerializeField] Text BlubsCountDownText;
     // Use this for initialization

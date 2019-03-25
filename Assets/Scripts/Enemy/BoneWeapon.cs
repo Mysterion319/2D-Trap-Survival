@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoneWeapon : MonoBehaviour {
-    float CharacterSpeed = 1f;
+    float CharacterSpeed = 7f;
 
     Rigidbody2D rb;
 
@@ -18,7 +18,7 @@ public class BoneWeapon : MonoBehaviour {
         target = GameObject.FindObjectOfType<Blub>();
         moveDirection = (target.transform.position - transform.position).normalized * CharacterSpeed;
         rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 1f);
 
 
 
@@ -28,7 +28,7 @@ public class BoneWeapon : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2d (Collider2D col)
     {
-		if(col.gameObject.name.Equals("blub"))
+		if(col.gameObject.name.Equals("Blub"))
         {
             Debug.Log("Hit");
             Destroy(gameObject);

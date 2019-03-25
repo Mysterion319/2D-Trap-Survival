@@ -9,26 +9,29 @@ public class SkelentonWarrior : MonoBehaviour
     GameObject BoneWeapon;
 
     float firerate;
-    float nextBone;
+    float nextfire;
+
     // Use this for initialization
     void Start()
     {
-        float firerate = 1f;
-        float nextBone = Time.time;
+        firerate = 1f;
+        nextfire = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        CheckTimeForBone();
-
+        CheckIfTimeToFire();
     }
-    void CheckTimeForBone()
+
+    void CheckIfTimeToFire()
     {
-        if (Time.time > nextBone)
+        if (Time.time > nextfire)
         {
             Instantiate(BoneWeapon, transform.position, Quaternion.identity);
-
+            nextfire = Time.time + firerate;
         }
+
     }
+
 }

@@ -4,18 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class BlubsPos : MonoBehaviour {
-    private Storelastscene sls;
-
-	// Use this for initialization
-	void Start () {
-        sls = GameObject.FindGameObjectWithTag("SLS").GetComponent<Storelastscene>();
-        transform.position = sls.BlubsLastCheckPointPostion;
-    }
-	
+    
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (Input.GetKeyDown(KeyCode.Q)){//Allows the player to be able to jump.
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);//Loads the Scene.
 
         }
 	}
