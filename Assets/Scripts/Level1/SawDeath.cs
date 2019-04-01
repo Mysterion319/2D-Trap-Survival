@@ -1,7 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+* Looking at this saw death script this script allows me to be able to,
+* set the speed of the saw. Then i can also set the different spots that 
+* the saw can go to thus with the spin time i can set how long the weapon
+* waits this allows the player to have time to avoid the saw.
+*/
 public class SawDeath : MonoBehaviour
 {
     [SerializeField] private Transform Blub;

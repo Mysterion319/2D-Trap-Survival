@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/**
+* Looking at the player movement class allows the character, to move set the speed
+* then also i can set how high the character jumps and how far the ground is beneath him.
+*/
 //Adding this allows us to access members of the UI namespace including Text.
 using UnityEngine.UI;
 
@@ -16,22 +19,18 @@ public class Playermovement : MonoBehaviour
  private bool isGrounded;//Needed so when the character is grounded he can jump.
  public AudioSource jump;//Allows an audio source to be able to be added to input my jump sound.
  public LayerMask WhatIsGround;// For when a layer needs to be added to ground to help with jumping.
-
-
+    
  public AudioSource ChurchChime;//Allows the church sound to be added by the audio source.
  private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
  public Transform BlubFeetPos;//A gameobject to check if blub is near enough to the ground to jump.
- public Text LetterCollected;//Needed so the canvas can be connected to the player and have the letter collected update.
- private int count;//Needed for letter count.
+ 
  public float CheckFloorRadius;//Needed so the gameobject can check the radius of the floor.
  
     void Start()
     {
        
         rb2d = GetComponent<Rigidbody2D>();
-        count = 0;//Starts the count from zero so the player knows the letter has not been collected.
-        SetLetterCollected();
-
+        
     }
 
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
@@ -75,26 +74,10 @@ public class Playermovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.gameObject.CompareTag("Love_Letter"))//The object that has the tag love letter are able to be picked up by blub.
-            ChurchChime.Play();
-
-        other.gameObject.SetActive(false);
-
-
-        count = count + 1;//Add one to the Letter collected UI when the letter has been picked up.
-
-
-        SetLetterCollected();
 
     }
 
-    void SetLetterCollected()
-    {
-
-        LetterCollected.text = "Letter Collected " + count.ToString();//Allows the text from the canvas to be able to be added to blub so when letter is picked up the canvas text updates.
-
-
-    }
+   
 
 }
 

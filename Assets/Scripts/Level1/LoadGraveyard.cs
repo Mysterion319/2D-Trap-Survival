@@ -2,28 +2,19 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
-
+/**
+* Then pressing the load graveyard button script will will load allowing
+* me to be able to load the second level.
+*/
 public class LoadGraveyard : MonoBehaviour
 {
-    public Button EntergraveyardButton;//Defines the button that i created.
+    [SerializeField] private Transform Blub;
+    [SerializeField] private Transform Flag;
+    public AudioSource death;
 
-
-
-
-    // Use this for initialization
-    void Start()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        EntergraveyardButton = EntergraveyardButton.GetComponent<Button>();// i define the button again as this allows me to be able to press the button.
-
+        SceneManager.LoadScene("Level2");//Loads the graveyard letter scene.
 
     }
-
-
-
-    public void EnterSecondLevel()
-    {
-        SceneManager.LoadScene("Level2");//Once the button has been pressed it will load the scenemanager allowing the second level to load.
-    }
-
-
 }

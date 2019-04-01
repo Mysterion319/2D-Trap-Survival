@@ -264,9 +264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Enter Castle
-
-'
+  m_Text: Back To Graveyard
 --- !u!222 &716684962
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -365,7 +363,7 @@ GameObject:
   - component: {fileID: 1582132585}
   - component: {fileID: 1582132586}
   m_Layer: 0
-  m_Name: LoadCastle
+  m_Name: CloseLetter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -400,10 +398,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1582132584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d0812f96af50824486bb4314d15912b, type: 3}
+  m_Script: {fileID: 11500000, guid: caaaaa3312a63c645b00da7d2b151e5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadBossBattleButton: {fileID: 2009730165}
+  BackToLevel: {fileID: 2009730165}
 --- !u!1 &1945595285
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +515,7 @@ GameObject:
   - component: {fileID: 2009730166}
   - component: {fileID: 2009730165}
   m_Layer: 0
-  m_Name: LoadBossBattleButton
+  m_Name: BackToLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,7 +562,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1582132586}
-        m_MethodName: FinalBattle
+        m_MethodName: HeadBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

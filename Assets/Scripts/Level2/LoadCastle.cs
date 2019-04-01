@@ -1,29 +1,20 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
-
+/**
+* This allows me to be able to trigger the boss battle.
+*/
 public class LoadCastle : MonoBehaviour
 {
-    public Button LoadBossBattleButton;
+    [SerializeField] private Transform Blub;//Allows blub to colide with the door.
+    [SerializeField] private Transform Door;//Adds collider to the door.
 
 
-
-
-    // Use this for initialization
-    void Start()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        LoadBossBattleButton = LoadBossBattleButton.GetComponent<Button>();
-
+        SceneManager.LoadScene("BossBattle");//Load the final letter.
 
     }
-
-
-
-    public void FinalBattle()
-    {
-        SceneManager.LoadScene("BossBattle");
-    }
-
 
 }
