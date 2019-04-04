@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832512353022735926}
   - component: {fileID: 1724145464210542716}
-  - component: {fileID: 4016415550379480265}
-  - component: {fileID: 1486165067491671265}
+  - component: {fileID: 7989651432094386156}
   - component: {fileID: 5386694264451043303}
   m_Layer: 0
   m_Name: Bone
@@ -82,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4016415550379480265
+--- !u!114 &7989651432094386156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,32 +90,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4821828386826195975}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea5e95c520f4084459e28cf7519eeb1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 418df340a6a37a04b903aa0a817d1969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Blub: {fileID: 0}
   RespawnPoint: {fileID: 0}
---- !u!50 &1486165067491671265
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4821828386826195975}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
+  death: {fileID: 0}
 --- !u!61 &5386694264451043303
 BoxCollider2D:
   m_ObjectHideFlags: 0

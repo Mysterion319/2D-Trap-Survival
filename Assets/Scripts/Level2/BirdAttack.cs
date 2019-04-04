@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 * Looking at this saw death script this script allows me to be able to,
-* set the speed of the bird. Then i can also set the different spots that 
-* the bird can go to thus with the spin time i can set how long the weapon
+* set the speed of the bird. Then I can also set the different spots that 
+* the bird can go to thus with the spin time I can set how long the weapon
 * waits this allows the player to have time to avoid the bird.
 */
 public class BirdAttack : MonoBehaviour
@@ -46,7 +46,7 @@ public class BirdAttack : MonoBehaviour
         }
     }
 
-        void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         Blub.transform.position = RespawnPoint.transform.position;
         death.Play();

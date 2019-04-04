@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 * Looking at this scythe death script this script allows me to be able to,
-* set the speed of the scythe. Then i can also set the different spots that 
-* the saw can go to thus with the spin time i can set how long the weapon
+* set the speed of the scythe. Then I can also set the different spots that 
+* the saw can go to thus with the spin time I can set how long the weapon
 * waits this allows the player to have time to avoid the scythe.
 */
 
-public class BossScytheAttack: MonoBehaviour
+public class BossScytheAttack : MonoBehaviour
 {
     [SerializeField] private Transform Blub;
     [SerializeField] private Transform LevelRespawn;
     public float ScytheSpeed; //Set scythe speed.
     private float ScytheWaitTime;
     public float CountDownToScythe;
-    public Transform[] ScytheSlices; //Arrey created to add in the spots for patrol. 
+    public Transform[] ScytheSlices; //Array created to add in the spots for patrol. 
     private int ScytheAttack;
     public AudioSource death;
 
@@ -57,3 +57,4 @@ public class BossScytheAttack: MonoBehaviour
     }
 
 }
+

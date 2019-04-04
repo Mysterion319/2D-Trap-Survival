@@ -5,28 +5,25 @@ using System.Collections;
 
 public class HowToPlay : MonoBehaviour
 {
-    public Button GiveUpButton;
-    public Button ReadyUpButton;
+    public Button ControlsButton;
+
 
 
 
     // Use this for initialization
     void Start()
     {
-        GiveUpButton = GiveUpButton.GetComponent<Button>();
-        ReadyUpButton = ReadyUpButton.GetComponent<Button>();
-      
+        ControlsButton = ControlsButton.GetComponent<Button>();
+
+
     }
 
 
 
-    public void GiveUpTheQuest()
+    public void ReturnToMenu()
     {
         SceneManager.LoadScene("StartMenu");
     }
-    public void TryTheQuestAgain()
-    {
-        Application.Quit();
-    }
+
 
 }

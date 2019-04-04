@@ -2,7 +2,7 @@
 using System.Collections;
 /**
 * Looking at the player movement class allows the character, to move set the speed
-* then also i can set how high the character jumps and how far the ground is beneath him.
+* then also I can set how high the character jumps and how far the ground is beneath him.
 */
 //Adding this allows us to access members of the UI namespace including Text.
 using UnityEngine.UI;
@@ -10,27 +10,27 @@ using UnityEngine.UI;
 public class Playermovement : MonoBehaviour
 {
 
- public float speed; //Floating point variable to store the player's movement speed.
- private float CharacterMoveInput;// A float which is used so i can adjust which way the character will be moving.
- public float BlubJumpForce;// Used for how forcful i want jump to be able to jump.
- private float BlubJumpTimeCounter;
- public float BlubJumpTime;
- private bool BlubIsJumping;
- private bool isGrounded;//Needed so when the character is grounded he can jump.
- public AudioSource jump;//Allows an audio source to be able to be added to input my jump sound.
- public LayerMask WhatIsGround;// For when a layer needs to be added to ground to help with jumping.
-    
- public AudioSource ChurchChime;//Allows the church sound to be added by the audio source.
- private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
- public Transform BlubFeetPos;//A gameobject to check if blub is near enough to the ground to jump.
- 
- public float CheckFloorRadius;//Needed so the gameobject can check the radius of the floor.
- 
+    public float speed; //Floating point variable to store the player's movement speed.
+    private float CharacterMoveInput;// A float which is used so I can adjust which way the character will be moving.
+    public float BlubJumpForce;// Used for how forceful I want jump to be able to jump.
+    private float BlubJumpTimeCounter;
+    public float BlubJumpTime;
+    private bool BlubIsJumping;
+    private bool isGrounded;//Needed so when the character is grounded, he can jump.
+    public AudioSource jump;//Allows an audio source to be able to be added to input my jump sound.
+    public LayerMask WhatIsGround;// For when a layer needs to be added to ground to help with jumping.
+
+    public AudioSource ChurchChime;//Allows the church sound to be added by the audio source.
+    private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
+    public Transform BlubFeetPos;//A game object to check if blub is near enough to the ground to jump.
+
+    public float CheckFloorRadius;//Needed so the game object can check the radius of the floor.
+
     void Start()
     {
-       
+
         rb2d = GetComponent<Rigidbody2D>();
-        
+
     }
 
     //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
@@ -70,14 +70,15 @@ public class Playermovement : MonoBehaviour
 
 
 
-        }
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
 
 
     }
 
-   
+
 
 }
+
 

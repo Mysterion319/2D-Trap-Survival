@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 /**
 * Looking at this saw death script this script allows me to be able to,
-* set the speed of the saw. Then i can also set the different spots that 
-* the saw can go to thus with the spin time i can set how long the weapon
+* set the speed of the saw. Then I can also set the different spots that 
+* the saw can go to thus with the spin time I can set how long the weapon
 * waits this allows the player to have time to avoid the saw.
 */
 public class BossSawDeath : MonoBehaviour
@@ -14,7 +14,7 @@ public class BossSawDeath : MonoBehaviour
     public float speed; //Enemy set speed.
     private float SawSpinTime;
     public float StartSawRotateing;
-    public Transform[] SawAttacks; //Arrey created to add in the spots for patrol. 
+    public Transform[] SawAttacks; //Array created to add in the spots for patrol. 
     private int RandomSawStrikes; // The int needed to have the patrol random.
 
     public AudioSource death;

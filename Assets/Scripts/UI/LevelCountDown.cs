@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 /**
 * In this script it will allow me to be able to add the countdown text to the
-* canvas just like the letter pick script. then i am able to set the level time
-* which is how long the player has left to complete the level. Also i am able to
+* canvas just like the letter pick script. then I can set the level time
+* which is how long the player has left to complete the level. Also, I am able to
 * set when the level time hits 0 then the scene is going to change to game over screen.
 */
 public class LevelCountDown : MonoBehaviour
@@ -38,4 +38,5 @@ public class LevelCountDown : MonoBehaviour
     }
 
 }
+
 

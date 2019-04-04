@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 */
 public class EndGame : MonoBehaviour
 {
-    [SerializeField] private Transform Blub;//Allows blub to colide with the door.
+    [SerializeField] private Transform Blub;//Allows blub to collide with the door.
     [SerializeField] private Transform Princess;//Adds collider to the door.
 
 

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 */
 public class LoadCastle : MonoBehaviour
 {
-    [SerializeField] private Transform Blub;//Allows blub to colide with the door.
+    [SerializeField] private Transform Blub;//Allows blub to collide with the door.
     [SerializeField] private Transform Door;//Adds collider to the door.
 
 

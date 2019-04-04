@@ -182,7 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back To Graveyard
+  m_Text: Back To Factory
 --- !u!222 &43613302
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -691,8 +691,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119501975}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -374, y: -392, z: 0}
-  m_LocalScale: {x: 0.42866576, y: 0.46311444, z: 1}
+  m_LocalPosition: {x: -731, y: -385.9, z: 0}
+  m_LocalScale: {x: 0.54119056, y: 0.5267927, z: 1}
   m_Children: []
   m_Father: {fileID: 678302035}
   m_RootOrder: 0
